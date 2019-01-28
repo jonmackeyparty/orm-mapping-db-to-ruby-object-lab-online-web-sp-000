@@ -59,10 +59,7 @@ class Student
       WHERE grade = 10 
     SQL
     
-    student = DB[:conn].execute(sql).first
-    @id = student[0]
-    @name =  student[1]
-    @grade = student[2]
+    DB[:conn].execute(sql).first
   end
 
 
