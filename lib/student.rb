@@ -26,7 +26,7 @@ class Student
       SELECT *
       FROM students
       WHERE grade = 9 
-    SQL 
+    SQL
     
     DB[:conn].execute(sql)
   end
