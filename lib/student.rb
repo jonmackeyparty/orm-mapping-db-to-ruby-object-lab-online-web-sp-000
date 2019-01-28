@@ -60,9 +60,9 @@ class Student
     SQL
     
     student = DB[:conn].execute(sql).first
-    student.id = student[0]
-    student.name =  student[1]
-    student.grade = student[2]
+    @id = student[0]
+    @name =  student[1]
+    @grade = student[2]
   end
 
 
