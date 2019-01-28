@@ -59,8 +59,8 @@ class Student
       WHERE grade = 10 
     SQL
     
-    DB[:conn].execute(sql)
-  end.first
+    DB[:conn].execute(sql).first
+  end
 
 
   def self.find_by_name(name)
