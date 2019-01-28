@@ -59,7 +59,10 @@ class Student
       WHERE grade = 10 
     SQL
     
-    DB[:conn].execute(sql).first
+    student = DB[:conn].execute(sql).first
+    student.id = student[0]
+    student.name =  student[1]
+    student.grade = student[2]
   end
 
 
